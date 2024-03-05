@@ -1,5 +1,12 @@
-<section class="flex flex-col items-center justify-center px-4 py-4 rounded-lg border border-black bg-white shadow-sm w-[327px] md:384px max-w-[384px] animate-fade-down animate-once animate-duration-1000 animate-ease-in-out">
+<section class="card flex flex-col items-center justify-center px-4 py-4 rounded-lg border border-black bg-white shadow-sm w-[327px] md:384px max-w-[384px] animate-fade-down animate-once animate-duration-1000 animate-ease-in-out">
     <slot name="header" />
     <slot name="body" />
     <slot name="footer" />
 </section>
+<style>
+    .card{
+        box-shadow: 13px 11px 10px 5px rgba(0,0,0,0.90);
+        -webkit-box-shadow: 13px 11px 10px 5px rgba(0,0,0,0.90);
+        -moz-box-shadow: 13px 11px 10px 5px rgba(0,0,0,0.90);
+    }
+</style>
