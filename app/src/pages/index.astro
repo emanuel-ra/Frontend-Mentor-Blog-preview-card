@@ -1,0 +1,32 @@
+---
+import Card from '@/components/Card.astro';
+import Footer from '@/components/Footer.astro';
+import Tag from '@/components/tags/Tag.astro';
+import Layout from '@/layouts/Layout.astro';
+---
+
+<Layout title="Frontend Mentor | Blog preview card">
+	<main class="w-screen h-dvh flex justify-center items-center ">
+		<Card>
+			<div slot="header" class="w-full items-center mb-6 inline-block">
+				<img src="/images/illustration-article.svg" alt="illustration article html & css foundations" class="w-full rounded-lg">
+			</div>
+			
+			<div slot="body" class="w-full flex flex-col gap-y-4 mb-4">
+				<div><Tag text='Learning' /></div>
+				<span>Published 21 Dec 2023</span>
+				<h1 class="font-semibold text-2xl text-balance cursor-pointer">HTML & CSS foundations</h1>
+				<p class="text-pretty">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+			</div>
+
+			<div slot="footer" class="w-full flex items-center gap-x-2">
+				<picture>
+					<img src="/images/image-avatar.webp" class="size-8" alt="Greg Hooper">
+				</picture>
+				<h2>Greg Hooper</h2>
+			</div>
+			
+		</Card>
+	</main>
+	<Footer />
+</Layout>

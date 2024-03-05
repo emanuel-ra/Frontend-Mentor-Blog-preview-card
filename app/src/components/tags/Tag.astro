@@ -1,0 +1,15 @@
+---
+interface Props{
+    text?:string
+}
+
+const { text } = Astro.props
+---
+<span class="tag px-4 py-2 rounded">
+    {text}
+</span>
+<style>
+    .tag{
+        background-color: hsl(47, 88%, 63%);
+    }
+</style>
